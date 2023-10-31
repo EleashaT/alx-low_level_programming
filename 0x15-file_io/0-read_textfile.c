@@ -8,7 +8,6 @@
  * @letters: numbers of letters printed.
  * Return: Return number of character printed else 0
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t rdon, wron;
