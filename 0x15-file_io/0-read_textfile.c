@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * read_textfile - reads a text file and prints the character
@@ -6,9 +8,10 @@
  * @letters: numbers of letters printed.
  * Return: Return number of character printed else 0
  */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t rdon, wron;
+	ssize_t rdn, wrn;
 	int fn;
 	char *buffer;
 
@@ -24,12 +27,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!buffer)
 		return (0);
 
-	rdon = read(fn, buffer, letters);
-	wron = write(STDOUT_FILENO, buffer, rdon);
+	rdn = read(fn, buffer, letters);
+	wrn = write(STDOUT_FILENO, buffer, rdn);
 
 	close(fn);
 
 	free(buffer);
 
-	return (wron);
+	return (wrn);
 }
