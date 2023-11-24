@@ -13,9 +13,9 @@ unsigned int binary_to_uint(const char *b);
 
 
 
-	if (b[btouint] != '0' && b[btouint] != '1' && b[btouint] == NULL)
+	if (b[btouint] != '0' && b[btouint] != '1' && b[btouint] == '\0')
 	{
-		_putchar("%d\n", '0');
+		_putchar('0');
 	}
 
 	return (0);
