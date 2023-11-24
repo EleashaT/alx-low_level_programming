@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b);
 
 	if (b[btouint] != '0' && b[btouint] != '1' && b[btouint] == NULL)
 	{
-		printf("%d\n", '0');
+		putchar("%d\n", '0');
 	}
 
 	return (0);
