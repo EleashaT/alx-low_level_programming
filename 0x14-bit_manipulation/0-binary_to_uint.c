@@ -8,12 +8,14 @@
  */
 unsigned int binary_to_uint(const char *b);
 {
-	char btouint [b] = 01010101;
+	char btouint[] = "01010101";
 	char *b = btouint;
+
+
 
 	if (b[btouint] != '0' && b[btouint] != '1' && b[btouint] == NULL)
 	{
-		putchar("%d\n", '0');
+		_putchar("%d\n", '0');
 	}
 
 	return (0);
