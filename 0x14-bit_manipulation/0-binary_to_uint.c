@@ -3,7 +3,7 @@
 
 /**
  * main - convert a binary to a unsigned int.
- * *b: character
+ * *b: pointer to array of binary
  * Return: 0
  */
 unsigned int binary_to_uint(const char *b);
@@ -11,11 +11,13 @@ unsigned int binary_to_uint(const char *b);
 	char btouint[] = "01010101";
 	char *b = btouint;
 
-
-
-	if (b[btouint] != '0' && b[btouint] != '1' && b[btouint] == '\0')
+	for (int = i; i < strlen(b); i++)
+	{
+		if (b[btouint] != '0' && b[btouint] != '1' && b[btouint] == '\0')
 	{
 		_putchar('0');
+	}
+		result = (result << 1) | (btouint[i] - '0');
 	}
 
 	return (0);
